@@ -40,8 +40,11 @@ provider "aws" {
 
 # Resource Block
 resource "aws_instance" "testec2" {
-  ami           = "ami-04d29b6f966df1537" # Amazon Linux in ap-south-1, update as per your region
+  ami           = "ami-0ff5003538b60d5ec" # Amazon Linux in ap-south-1, update as per your region
   instance_type = "t3.micro"
+  tags = {
+     "Name" = "EC2 Demo"
+  }
 }
 ```
 
@@ -72,4 +75,5 @@ terraform destroy
 # Delete Terraform files 
 rm -rf .terraform*
 rm -rf terraform.tfstate*
+
 ```
