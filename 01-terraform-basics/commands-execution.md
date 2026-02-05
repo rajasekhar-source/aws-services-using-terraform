@@ -37,6 +37,7 @@ aws_instance.myTest: Creation complete after 13s [id=i-003da89133f8a63d8]
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
+- After apply completed it will crete the terraform.tfstate file. It contains the AWS Instance info like if EC2 then it contains the public and private ip info arn info etc in json format.
 ![Apply](./img/apply.png)
 
 ## terraform destroy 
@@ -44,4 +45,6 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 - here also it will show the what are we going to delete it will show.
 - Next, it will ask the confirmation to destroy or not, like apply command.
 - Once the value is Yes then it will be destroy everting related to that instance.
+- Once destroy will be complete it will be update the terraform.tfstate file and it generate new file terraform.tfstate.backup it has previous .tfstate info.
+
 ![destroy](./img/destroy.png)
