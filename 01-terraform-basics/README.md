@@ -77,3 +77,5 @@ rm -rf .terraform*
 rm -rf terraform.tfstate*
 
 ```
+Refere this file for commands execution [command execution](commands-execution.md)
+ 
