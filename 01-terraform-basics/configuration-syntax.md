@@ -33,13 +33,16 @@ resource "aws_instance" "ec2_demo" {
   - ```ami```, ```instance_type``` → Arguments
 
 ## Step-04: Understanding Blocks
-- Blocks are the main structure in Terraform
+Blocks are the main structure in Terraform
+- Fundamental Blocks
   - ```terraform``` → Terraform settings and provider versions
   - ```provider``` → Cloud provider configuration
   - ```resource``` → Infrastructure components
+- Variable Blocks
   - ```variable``` → Input values
   - ```output``` → Display values after apply
   - ```locals``` → Reusable expressions
+- Referencing Blocks
   - ```data``` → Read existing resources
   - ```module```→ Reusable Terraform code
 
