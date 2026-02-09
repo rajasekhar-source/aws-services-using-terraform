@@ -44,3 +44,10 @@ resource "aws_instance" "ec2_demo" {
   - ```module```→ Reusable Terraform code
 
   Each block has a specific purpose and follows the same syntax style.
+
+## Additional Reference:
+- [Configuration language](https://learn.hashicorp.com/tutorials/terraform/resource?in=terraform/configuration-language) 
+- [Resource: AWS Instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance)
+- [Resource: AWS Instance Argument Reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#argument-reference)
+- [Resource: AWS Instance Attribute Reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#attributes-reference)
+  
